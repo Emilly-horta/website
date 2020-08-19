@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="./css/album.css" rel="stylesheet">
+    <link href="./css/carousel.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .bg-light{
+          background-color: #800080!important;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          background-color: #800080!important;
+        }
+      }
+    </style>
+    <title>Pyladies Parnaiba</title>
+</head>
+
+<body>
+    <div>
+        <div class="menu-principal">
+            <div class="header-1">
+            <div class="title">
+              <img src="./img/logo.png">
+              PyLadies
+            </div> 
+            <div class="title-2">Parnaíba</div>
+        </div>
+            <div class="informations">
+                <a href="https://pyladiesparnaiba.carrd.co/" class="sobre">Sobre</a>
+                <a href="#galeria" class="galeria">Galeria</a>
+                <a href="https://github.com/parnaibaPyladies/materiais" class="contato">Materiais</a>
+            </div>
+        </div>
+        
+    </div>
+
+        <div class="header-2">
+            <div class="logo-menu">
+                <img src="./img/logo-menu.png"/>   
+                <div class="title-menu">
+                    PyLadies Parnaiba
+                </div>
+                <div class="subtitle-menu">
+                   <p>Empoderando mulheres na Tecnologia</p> 
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+          function typeWriter(elemento){
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+              setTimeout(() => elemento.innerHTML += letra, 75 * i)
+            });
+          }
+          const subtitle = document.querySelector('p');
+          typeWriter(subtitle);
+
+        </script>
+          
+            <div class="album py-5 bg-light">
+              <div class="container">
+          
+                <div class="row">
+                  
+          
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="img-sobre">
+                          <img src="./img/icons/sobre.png">
+                      </div>  
+                      <div class="card-body">
+                        <p class="card-text">Somos um grupo internacional, com foco em ajudar mais mulheres a se tornarem participantes ativas e líderes da comunidade de código aberto Python.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://python.org.br/pyladies/">View</a></button>
+                          </div>
+                          <small class="text-muted">9 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="img-insta">
+                            <img src="./img/icons/insta.png">
+                        </div>  
+                      <div class="card-body">
+                        <p class="card-text">Venha conhecer nossas séries de posts e conteúdos que preparamos com muito amor</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.instagram.com/pyladiesphb/"">View</a></button>
+                          </div>
+                          <small class="text-muted">9 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="img-blog">
+                            <img src="./img/icons/blog.png">
+                        </div>  
+                      <div class="card-body">
+                        <p class="card-text">Está animada para aprender mais sobre mulheres e tecnologia? Adoramos compartilhar conhecimento por aqui. "Bora curiar"?! [EM ANDAMENTO]</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          </div>
+                          <small class="text-muted">9 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container marketing">
+
+              <div class="frase-1">
+                <h3 class="frase">"Você precisa fazer aquilo que pensa que não é capaz de fazer."
+                  Eleanor Roosevelt</h3>
+              </div>
+
+                <div class="time">
+                    <h3 class="time-2">Quem organiza ?</h3>
+                </div>
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">
+                      <div class="img-emilly">
+                          <img src="./img/time/emilly.png">
+                      </div>
+                    <h2 style="color: aliceblue;";>Emilly Horta</h2>
+                    <p style="color: aliceblue;";>Graduanda em Sistemas de Informação, Técnica em Informática pelo Instituto Federal do Piauí,estagiária na Foxinline, co-fundadora da pyladies parnaíba, coordenadora de eventos na start coding e idealizadora vênus </p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <div class="img-karina">
+                        <img src="./img/time/karina.png">
+                    </div>
+                    <h2 style="color: aliceblue;";>Karina Cursino</h2>
+                    <p style="color: aliceblue;";>professora Assistente II da Universidade Estadual do Piauí (Uespi) e doutoranda em Sociologia da UFMG. Possui graduação em Ciências Sociais pela Universidade Federal de Minas Gerais (2005) e mestrado em Sociologia pela Universidade Federal de Minas Gerais (2008). Tem experiência na área de Sociologia, atuando principalmente nos seguintes temas: teoria sociológica, sociologia do conhecimento, cultura científica, sociologia da literatura, interacionismo simbólico e teoria da escolha racional.</p>
+                   
+                  </div><!-- /.col-lg-4 -->
+
+                  <div class="col-lg-4">
+                    <div class="img-celenny">
+                        <img src="./img/time/celenny.png">
+                    </div>
+                    <h2 style="color: aliceblue;";>Celenny Cristhyne</h2>
+                    <p style="color: aliceblue;";>Graduanda em Ciência da Computação (Uespi- campus parnaíba), criadora do projeto @celycodes</p>
+                  </div><!-- /.col-lg-4 -->
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img-vitoria">
+                            <img src="./img/time/vitoria.png">
+                        </div>
+                      <h2 style="color: aliceblue;";>Vitoria Neris</h2>
+                      <p style="color: aliceblue;";>Graduanda em Ciência da Computação (Uespi- Campus parnaíba)</p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <div class="img-grazi">
+                            <img src="./img/time/grazi.png">
+                        </div>
+                      <h2 style="color: aliceblue;";>Alinne Grazielle</h2>
+                      <p style="color: aliceblue;";>Técnica em Enfermagem, e Graduanda em Ciência da Computação (Uespi - parnaíba)</p>
+                     
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <div class="img-emilia">
+                            <img src="./img/time/anaEmilia.png">
+                        </div>
+                      <h2 style="color: aliceblue;";>Ana Emília Costa</h2>
+                      <p style="color: aliceblue;";>Graduanda em Ciência da Computação (Uespi- Campus parnaíba)</p>
+                    </div>
+
+                    <section id="galeria">
+                      <div class="galeria-all">
+                        <div>
+                            <h3>Nossa Galeria</h3>
+                        </div>
+                          <div class="img-evento">
+                            <img src="./img/galery/evento.jpg">
+                          </div>
+                          <div class="img-minicurso">
+                            <img src="./img/galery/minicurso.jpg">
+                          </div>
+                          <div class="img-reuniao1">
+                            <img src="./img/galery/reuniao1.jpg">
+                          </div>
+                          <div class="img-reuniao2">
+                            <img src="./img/galery/reuniao2.jpg">
+                          </div>
+                          <div class="img-reuniao3">
+                            <img src="./img/galery/reuniao3.jpg">
+                          </div>
+                      </div>
+                    </section>
+                  </div>
+
+                </div>
+                <footer class="footer">
+                  <div class="content">
+                   <div class="footer-col">
+                      <div class="social-media">
+                        <a href="https://twitter.com/pyladiesphb"><img src="./img/icons/twitter.png"></a>
+                        <a href="https://www.youtube.com/channel/UCSS9PKgt7zsaZDJ6ZeSLh6w?sub_confirmation=1"><img src="./img/icons/youtube.png"></a>
+                      </div>
+                      <h3 class="copy" style="color: deeppink; margin-left: 550px; font-size: 20px; margin-top: 30px;">Copyright &copy; Pyladies Parnaíba</h3>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+        
+</body>
+
+</html>
